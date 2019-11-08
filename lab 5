@@ -1,0 +1,125 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+
+int main()
+{
+	/*
+	int tab[10][10];
+	for(int i=0;i<10;i++)
+	{
+		for (int j=0; j < 10; j++)
+		{
+			tab[i][j] = (i + 1)*(j + 1);
+		}
+	}
+	*/
+
+
+
+
+	srand(time(NULL));
+	double tab[12][31] = {};
+
+	for (int i = 0; i < 31; i++)
+	{
+		tab[0][i] = -15 + 23 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 28; i++)
+	{
+		tab[1][i] = -10 + 20 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 31; i++)
+	{
+		tab[2][i] = -5 + 17 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 30; i++)
+	{
+		tab[3][i] = 16 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 31; i++)
+	{
+		tab[4][i] = 5 + 15 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 30; i++)
+	{
+		tab[5][i] = 10 + 15 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 31; i++)
+	{
+		tab[6][i] = 15 + 17 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 31; i++)
+	{
+		tab[7][i] = 15 + 20 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 30; i++)
+	{
+		tab[8][i] = 10 + 20 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 31; i++)
+	{
+		tab[9][i] = 20 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 30; i++)
+	{
+		tab[10][i] = -5 + 20 * static_cast<double>(rand()) / RAND_MAX;
+	}
+
+	for (int i = 0; i < 31; i++)
+	{
+		tab[11][i] = -10 + 20 * static_cast<double>(rand()) / RAND_MAX;
+	}
+	
+	for (int i = 0; i < 12; i++)
+	{
+		for (int j = 0; j < 31; j++)
+		{
+			cout << setprecision(4) << tab[i][j] << "\t";
+		}
+		cout << endl << endl;
+	}
+	cout << endl << endl;
+
+	int a, b, c, d;
+	cout << "podaj miesiac" << endl;
+	cin >> a;
+	cout << "podaj dzien" << endl;
+	cin >> b;
+	cout << "w tym dnu temperatura wyniosla " << tab[a][b] << endl << endl << endl;
+
+
+	cout << "podaj miesiac" << endl;
+	cin >> a;
+	cout << "podaj dzien" << endl;
+	cin >> b;
+	cout << "podaj drugi miesiac" << endl;
+	cin >> c;
+	cout << "podaj drugi dzien" << endl;
+	cin >> d;
+
+
+	int srednia = 0, licznik = 0;
+
+
+	
+
+
+	
+
+	system("pause");
+	return 0;
